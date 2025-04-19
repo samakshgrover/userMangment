@@ -11,6 +11,6 @@ import {
 export const userRouter = Router()
 	.get("/all", getUsers)
 	.get("/:userId", getUser)
-	.post("/user", createUser)
-	.patch("/user", updateUser)
-	.delete("user/:userId", deleteUser);
+	.post("/", createUser)
+	.patch("/", updateUser)
+	.delete("/:userId", deleteUser);

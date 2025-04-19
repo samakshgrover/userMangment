@@ -3,6 +3,30 @@
 ###
 GET {{baseUrl}}/user/all
 
+###
+GET {{baseUrl}}/user/1
+
+###
+POST {{baseUrl}}/user
+Content-Type: application/json
+
+{
+	"firstName": "Samaksh",
+	"lastName": "Grover",
+	"companyName": "meta"
+}
+
+###
+PATCH {{baseUrl}}/user
+Content-Type: application/json
+
+{
+	"id": 1,
+	"companyName": "google"
+}
+
+###
+DELETE {{baseUrl}}/user/1
 
 ###
 GET {{baseUrl}}/company/all
