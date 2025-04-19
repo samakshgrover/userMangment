@@ -1,0 +1,35 @@
+
+@baseUrl=http://localhost:3001
+###
+GET {{baseUrl}}/user/all
+
+
+###
+GET {{baseUrl}}/company/all
+
+###
+GET {{baseUrl}}/company/2
+
+###
+POST {{baseUrl}}/company
+Content-Type: application/json
+
+{
+	"name": "google",
+	"license": "some_random_number",
+	"address": "dfkshfkjsjkd"
+}
+
+###
+PATCH {{baseUrl}}/company
+Content-Type: application/json
+
+{
+	"id": 2,
+	"name": "meta"
+}
+
+###
+DELETE {{baseUrl}}/company/1
+
+
